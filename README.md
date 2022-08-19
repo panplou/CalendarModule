@@ -3,6 +3,8 @@
 
 Calendar-Module application is a ReactJS based application that will display upcoming calendar events (Title - Date). Date will be adjusted based on the remaining period until EventStartDate, if date passed then event is considered as expired.
 
+When Event item is clicked then a component over the view is visible with additional event details and download option
+
 Data will be fetched from API link and rendered on module.
 
 
