@@ -47,5 +47,5 @@ li:nth-child(odd) {
 
 Dialog {
   width: '100%';
-  width: 'none';
+  max-width: 'none';
 }

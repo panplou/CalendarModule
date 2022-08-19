@@ -50,6 +50,7 @@ function App() {
   const handleToClose = () => {
     setOpen(false);
   };
+
   const [calendarEvents, setCalendarEvents] = useState([]);
   const apiUrl = 'https://prod-179.westeurope.logic.azure.com/workflows/7c84997dd6894507a60796acb06e5c43/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=6hFoizfo2w62d0iQK_Zyt7a3Ycr9akAkXdCPAG0ecwQ&usr=50616e6179696f746973';
 
@@ -138,8 +139,12 @@ useEffect(() => {
                     <DialogContentText>
                     <img src={object.BannerUrl} />
                     <div dangerouslySetInnerHTML={{ __html: object.Description}} />
-                    <div>Date and Time</div>
-                    {formatDate(object.EventStartDate)}
+                    <h2>Date and Time</h2>
+                      {formatDate(object.EventStartDate)}
+                    <h4>Location: {object.AddressLine1}</h4>
+                    <h5>Created By: {object.Author} on {formatDate(object.Created)}</h5>
+                    <h5>Modified By: {object.Editor} on {formatDate(object.Modified)}</h5>
+                    <p><a title="external link" href="#">Download</a></p>
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
