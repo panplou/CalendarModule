@@ -14,7 +14,7 @@ Data will be fetched from API link and rendered on module.
 
 ## Run
 
-1) Checkout project from repository to desired directory
+1) Checkout project from repository to desired directory (or download as zip from the 'Code' drop down button)
 3) Open Terminal / Command line
 4) Navigate to the directory the project folder is located and go inside calendar module folder 
 5) execute "npm install" to fetch all necessary depencies
