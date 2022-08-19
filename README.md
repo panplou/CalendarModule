@@ -16,7 +16,7 @@ Data will be fetched from API link and rendered on module.
 
 1) Checkout project from repository to desired directory
 3) Open Terminal / Command line
-4) Navigate to the directory the project is located
+4) Navigate to the directory the project folder is located and go inside calendar module folder 
 5) execute "npm install" to fetch all necessary depencies
 5) execute "npm start" to create a localhost dev environment server. A message like the below shoule be prompted
 
