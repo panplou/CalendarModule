@@ -27,7 +27,7 @@ You can now view calendar-module in the browser.
 
   Local:            http://localhost:3000
 
-6) Visit https://loalhost:3000 to view the app
+6) Visit http://loalhost:3000 to view the app
 
 ## Contributing
 Contribution or any suggestions for corrections enhancments are gladly welcomed.
