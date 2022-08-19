@@ -30,10 +30,6 @@
   flex-direction: column;
 }
 
-/*.calendar-data-container:hover {
-  background-color: rgb(237, 235, 233);
-}*/
-
 .data-items:hover {
   background-color: rgb(237, 235, 233);
 }
@@ -47,4 +43,9 @@ a:hover {
 
 li:nth-child(odd) {
   background-color: rgb(243, 242, 241);;
+}
+
+Dialog {
+  width: '100%';
+  width: 'none';
 }

@@ -43,6 +43,7 @@ function App() {
 
   //Constants
   const [open, setOpen] = React.useState(false);
+  const [object, setObject] = React.useState({});
   const handleClickToOpen = () => {
     setOpen(true);
   };
@@ -121,7 +122,7 @@ useEffect(() => {
                 <div key={index}>
                     <ol style={calendarDataStyle}>
                       {record.map(item => (
-                        <li onClick={handleClickToOpen}>                    
+                        <li onClick={() => { setObject(item); handleClickToOpen()}}>                    
                           <div className="data-items">
                             <a href="#">{item.Title} - {formatDate(item.EventStartDate)}</a>  
                           </div>
@@ -132,10 +133,13 @@ useEffect(() => {
               )
             })}
         <Dialog open={open} onClose={handleToClose}>
-            <DialogTitle>{"Event details  "}</DialogTitle>
+            <DialogTitle>{object.Title}</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                      {"Event Details here"}
+                    <img src={object.BannerUrl} />
+                    <div dangerouslySetInnerHTML={{ __html: object.Description}} />
+                    <div>Date and Time</div>
+                    {formatDate(object.EventStartDate)}
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
