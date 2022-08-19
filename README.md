@@ -14,8 +14,7 @@ Data will be fetched from API link and rendered on module.
 
 ## Run
 
-1) Checkout project from repository
-2) Place it to desired directory
+1) Checkout project from repository to desired directory
 3) Open Terminal / Command line
 4) Navigate to the directory the project is located
 5) execute "npm install" to fetch all necessary depencies
