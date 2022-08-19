@@ -14,7 +14,7 @@ Data will be fetched from API link and rendered on module.
 
 ## Run
 
-1) Download project from repository
+1) Checkout project from repository
 2) Place it to desired directory
 3) Open Terminal / Command line
 4) Navigate to the directory the project is located
